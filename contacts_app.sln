@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "contacts_app", "contacts_app.csproj", "{C3675232-CBF1-4C89-9CFD-29DA7A4AE3DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3675232-CBF1-4C89-9CFD-29DA7A4AE3DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3675232-CBF1-4C89-9CFD-29DA7A4AE3DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3675232-CBF1-4C89-9CFD-29DA7A4AE3DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3675232-CBF1-4C89-9CFD-29DA7A4AE3DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
