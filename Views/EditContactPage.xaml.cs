@@ -12,4 +12,9 @@ public partial class EditContactPage : ContentPage
     {
         InitializeComponent();
     }
+
+    private void BtnCancel_OnClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("..");
+    }
 }

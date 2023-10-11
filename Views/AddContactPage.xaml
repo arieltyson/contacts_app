@@ -3,7 +3,21 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="contacts_app.Views.AddContactPage">
-    <ContentPage.Content>
-        
-    </ContentPage.Content>
+    
+        <VerticalStackLayout
+            BackgroundColor="LightGray"
+            Spacing="10"
+            Padding="10">
+                
+            <Label
+                Text="Welcome to the Add Contacts Page"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"/>
+            <Button 
+                x:Name="BtnCancel"
+                BackgroundColor="Red"
+                Clicked="BtnCancel_OnClicked"
+                Text="EditContact" 
+            />
+            </VerticalStackLayout>
 </ContentPage>
