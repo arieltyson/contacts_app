@@ -10,12 +10,12 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center"/>
             <Button 
-                x:Name="btnEditContact"
+                x:Name="BtnEditContact"
                 Clicked="BtnEditContact_OnClicked"
                 Text="EditContact" 
             />
             <Button 
-                x:Name="btnAddContact"
+                x:Name="BtnAddContact"
                 Clicked="BtnAddContact_OnClicked"
                 Text="AddContact" 
                 />

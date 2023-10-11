@@ -15,11 +15,11 @@ public partial class ContactsPage : ContentPage
 
     private void BtnEditContact_OnClicked(object sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        Shell.Current.GoToAsync(nameof(EditContactPage));
     }
 
     private void BtnAddContact_OnClicked(object sender, EventArgs e)
     {
-        throw new NotImplementedException();
+        Shell.Current.GoToAsync(nameof(AddContactPage));
     }
 }
