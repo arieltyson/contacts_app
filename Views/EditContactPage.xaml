@@ -17,7 +17,7 @@
             x:Name="BtnCancel"
             BackgroundColor="Red"
             Clicked="BtnCancel_OnClicked"
-            Text="EditContact" 
+            Text="Cancel" 
         />
     </VerticalStackLayout>
 </ContentPage>
