@@ -12,14 +12,19 @@ public partial class ContactsPage : ContentPage
     {
         InitializeComponent();
 
-        List<string> contacts = new List<string>()
+        List<Contact> contacts = new List<Contact>()
         {
-            "John Wall",
-            "Conor McGregor",
-            "Kibe Bean Bryant",
-            "Alibaba"
+            new Contact { Name="Baker Smith", Email="bsmith@microsoft.com"},
+            new Contact { Name="Ariel Tyson", Email="atyson@microsoft.com"},
+            new Contact { Name="Randall Hill", Email="rhill@microsoft.com"},
         };
 
         ContactsList.ItemsSource = contacts;
+    }
+
+    public class Contact
+    {
+        public string Name { get; set; }
+        public string Email { get; set; }
     }
 }

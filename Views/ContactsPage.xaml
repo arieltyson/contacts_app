@@ -5,7 +5,16 @@
              x:Class="contacts_app.Views.ContactsPage"
              Title="Contacts">
     
-        <ListView x:Name="ContactsList" BackgroundColor="Azure">
-
+        <ListView
+            x:Name="ContactsList"
+            BackgroundColor="Azure"
+            SeparatorColor="Black"
+            RowHeight="60"
+            >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Email}"></TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
         </ListView>
 </ContentPage>
