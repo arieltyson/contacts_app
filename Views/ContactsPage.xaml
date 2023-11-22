@@ -1,27 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="contacts_app.Views.ContactsPage">
+             x:Class="contacts_app.Views.ContactsPage"
+             Title="Contacts">
     
-        <VerticalStackLayout
-            BackgroundColor="LightGray"
-            Spacing="10"
-            Padding="10">
-            
-            <Label
-                Text="Welcome to the Contacts Page"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
-            <Button 
-                x:Name="BtnEditContact"
-                Clicked="BtnEditContact_OnClicked"
-                Text="EditContact" 
-            />
-            <Button 
-                x:Name="BtnAddContact"
-                Clicked="BtnAddContact_OnClicked"
-                Text="AddContact" 
-                />
-        </VerticalStackLayout>
+        <ListView x:Name="ContactsList" BackgroundColor="Azure">
+
+        </ListView>
 </ContentPage>

@@ -11,15 +11,15 @@ public partial class ContactsPage : ContentPage
     public ContactsPage()
     {
         InitializeComponent();
-    }
 
-    private void BtnEditContact_OnClicked(object sender, EventArgs e)
-    {
-        Shell.Current.GoToAsync(nameof(EditContactPage));
-    }
+        List<string> contacts = new List<string>()
+        {
+            "John Wall",
+            "Conor McGregor",
+            "Kibe Bean Bryant",
+            "Alibaba"
+        };
 
-    private void BtnAddContact_OnClicked(object sender, EventArgs e)
-    {
-        Shell.Current.GoToAsync(nameof(AddContactPage));
+        ContactsList.ItemsSource = contacts;
     }
 }
