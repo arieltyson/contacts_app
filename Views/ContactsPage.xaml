@@ -10,10 +10,14 @@
             BackgroundColor="Azure"
             SeparatorColor="Black"
             RowHeight="60"
-            >
+            ItemSelected="ContactsList_ItemSelected"
+            ItemTapped="ContactsList_ItemTapped">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <TextCell Text="{Binding Name}" Detail="{Binding Email}"></TextCell>
+                    <TextCell
+                        Text="{Binding Name}"
+                        Detail="{Binding Email}">
+                    </TextCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

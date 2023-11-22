@@ -27,4 +27,17 @@ public partial class ContactsPage : ContentPage
         public string Name { get; set; }
         public string Email { get; set; }
     }
+
+    async void ContactsList_ItemSelected(System.Object sender, Microsoft.Maui.Controls.SelectedItemChangedEventArgs e)
+    {
+        if (ContactsList.SelectedItem != null)
+        {
+            await Shell.Current.GoToAsync(nameof(EditContactPage));
+        }
+    }
+
+    void ContactsList_ItemTapped(System.Object sender, Microsoft.Maui.Controls.ItemTappedEventArgs e)
+    {
+        ContactsList.SelectedItem = null;
+    }
 }
