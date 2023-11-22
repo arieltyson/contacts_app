@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using contacts_app.Data;
+using contacts_app.Models;
+using Contact = contacts_app.Models.Contact;
 
 namespace contacts_app.Views;
 
@@ -12,20 +10,9 @@ public partial class ContactsPage : ContentPage
     {
         InitializeComponent();
 
-        List<Contact> contacts = new List<Contact>()
-        {
-            new Contact { Name="Baker Smith", Email="bsmith@microsoft.com"},
-            new Contact { Name="Ariel Tyson", Email="atyson@microsoft.com"},
-            new Contact { Name="Randall Hill", Email="rhill@microsoft.com"},
-        };
+        List<Contact> contacts = ContactRepository.GetContacts();
 
         ContactsList.ItemsSource = contacts;
-    }
-
-    public class Contact
-    {
-        public string Name { get; set; }
-        public string Email { get; set; }
     }
 
     async void ContactsList_ItemSelected(System.Object sender, Microsoft.Maui.Controls.SelectedItemChangedEventArgs e)
