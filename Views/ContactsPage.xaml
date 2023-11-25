@@ -27,7 +27,7 @@
                         <TextCell.ContextActions>
                             <MenuItem Text="Delete"
                                       IsDestructive="True"
-                                      Clicked="MenuItem_Clicked"
+                                      Clicked="DeleteButton_Clicked"
                                       CommandParameter="{Binding .}">
                             </MenuItem>
                         </TextCell.ContextActions>
