@@ -4,8 +4,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="contacts_app.Views.ContactsPage"
              Title="Contacts">
-    
+
+    <Grid
+        RowDefinitions="*,Auto"
+        ColumnDefinitions="*">
+
         <ListView
+            Grid.Row="0"
+            Grid.Column="0"
             x:Name="ContactsList"
             BackgroundColor="Azure"
             SeparatorColor="Black"
@@ -21,4 +27,14 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
+        <Button
+            Grid.Column="0"
+            Grid.Row="1"
+            x:Name="addButton"
+            Text="Add Contact"
+            Clicked="addButton_Clicked">
+        </Button>
+    </Grid>
+        
 </ContentPage>

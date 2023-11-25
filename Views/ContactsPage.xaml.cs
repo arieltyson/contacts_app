@@ -33,4 +33,9 @@ public partial class ContactsPage : ContentPage
     {
         ContactsList.SelectedItem = null;
     }
+
+    void addButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(AddContactPage));
+    }
 }
