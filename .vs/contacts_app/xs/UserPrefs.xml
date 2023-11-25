@@ -1,27 +1,27 @@
-﻿<Properties StartupConfiguration="{C3675232-CBF1-4C89-9CFD-29DA7A4AE3DE}|Default">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.contacts__app PreferredExecutionTarget="Android.pixel_5_-_api_31" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+﻿<Properties>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Data/Repository.cs">
+    <Files>
+      <File FileName="Views/ContactsPage.xaml.cs" />
+      <File FileName="Views/ContactsPage.xaml" />
+      <File FileName="Models/Contacts.cs" />
+      <File FileName="Data/Repository.cs" Line="42" Column="13" />
+      <File FileName="Views/EditContactPage.xaml" />
+      <File FileName="Views/EditContactPage.xaml.cs" />
+      <File FileName="../../../../../../usr/local/share/dotnet/sdk/7.0.401/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" Line="113" Column="5" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="contacts_app" expanded="True">
-            <Node name="contacts_app">
-              <Node name="Dependencies" expanded="True">
-                <Node name="net7.0-android" expanded="True">
-                  <Node name="PackageDependencies" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="contacts_app" selected="True" />
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_31" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
