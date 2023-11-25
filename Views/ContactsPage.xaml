@@ -6,6 +6,7 @@
              Title="Contacts">
 
     <Grid
+        Padding="5"
         RowDefinitions="*,Auto"
         ColumnDefinitions="*">
 
@@ -15,7 +16,7 @@
             x:Name="ContactsList"
             BackgroundColor="Azure"
             SeparatorColor="Black"
-            RowHeight="60"
+            RowHeight="65"
             ItemSelected="ContactsList_ItemSelected"
             ItemTapped="ContactsList_ItemTapped">
             <ListView.ItemTemplate>
