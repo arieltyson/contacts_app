@@ -10,30 +10,37 @@
         <Frame Padding=" 10, 2, 10, 2">
             <HorizontalStackLayout>
             <Label Text="Name" VerticalOptions="Center" WidthRequest="60"></Label>
-            <Entry VerticalOptions="Center"></Entry>
+            <Entry x:Name="entryName" VerticalOptions="Center"></Entry>
         </HorizontalStackLayout>
         </Frame>
 
         <Frame Padding=" 10, 2, 10, 2">
             <HorizontalStackLayout>
             <Label Text="Email" VerticalOptions="Center" WidthRequest="60"></Label>
-            <Entry VerticalOptions="Center"></Entry>
+            <Entry x:Name="entryEmail" VerticalOptions="Center"></Entry>
         </HorizontalStackLayout>
         </Frame>
         
         <Frame Padding=" 10, 2, 10, 2">
             <HorizontalStackLayout>
             <Label Text="Phone" VerticalOptions="Center" WidthRequest="60"></Label>
-            <Entry VerticalOptions="Center"></Entry>
+            <Entry x:Name="entryPhone" VerticalOptions="Center"></Entry>
         </HorizontalStackLayout>
         </Frame>
         
         <Frame Padding=" 10, 2, 10, 2">
             <HorizontalStackLayout>
             <Label Text="Address" VerticalOptions="Center" WidthRequest="60"></Label>
-            <Entry VerticalOptions="Center"></Entry>
+            <Entry x:Name="entryAddress" VerticalOptions="Center"></Entry>
         </HorizontalStackLayout>
         </Frame>
+
+        <Button
+            x:Name="cancelButton"
+            Text="Cancel"
+            Clicked="cancelButton_Clicked"
+            BackgroundColor="Red">
+        </Button>
         
     </VerticalStackLayout>
 </ContentPage>

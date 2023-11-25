@@ -14,11 +14,23 @@ public partial class EditContactPage : ContentPage
         InitializeComponent();
     }
 
+    private void cancelButton_Clicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("..");
+    }
+
     public string ContactId
     {
         set
         {
             contact = ContactRepository.GetContactById(int.Parse(value));
+            if (contact != null)
+            {
+                entryName.Text = contact.Name;
+                entryAddress.Text = contact.Address;
+                entryEmail.Text = contact.Email;
+                entryPhone.Text = contact.Phone;
+            }
         }
     }
 }
