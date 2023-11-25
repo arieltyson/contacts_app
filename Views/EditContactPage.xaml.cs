@@ -33,4 +33,15 @@ public partial class EditContactPage : ContentPage
             }
         }
     }
+
+    void updateButton_Clicked(System.Object sender, System.EventArgs e)
+    {
+        contact.Name = entryName.Text;
+        contact.Address = entryAddress.Text;
+        contact.Email = entryEmail.Text;
+        contact.Phone = entryPhone.Text;
+
+        ContactRepository.UpdateContact(contact.ContactId, contact);
+        Shell.Current.GoToAsync("..");
+    }
 }
