@@ -15,6 +15,9 @@ public partial class ContactsPage : ContentPage
     protected override void OnAppearing()
     {
         base.OnAppearing();
+
+        SearchBar.Text = string.Empty;
+
         LoadContacts();
     }
 
@@ -48,6 +51,12 @@ public partial class ContactsPage : ContentPage
     private void LoadContacts()
     {
         var contacts = new ObservableCollection<Contact>(ContactRepository.GetContacts());
+        ContactsList.ItemsSource = contacts;
+    }
+
+    void SearchBar_TextChanged(System.Object sender, Microsoft.Maui.Controls.TextChangedEventArgs e)
+    {
+        var contacts = new ObservableCollection<Contact>(ContactRepository.SearchContacts(((SearchBar)sender).Text));
         ContactsList.ItemsSource = contacts;
     }
 }

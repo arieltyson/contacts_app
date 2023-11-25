@@ -7,11 +7,20 @@
 
     <Grid
         Padding="5"
-        RowDefinitions="*,Auto"
+        RowDefinitions="Auto,*,Auto"
         ColumnDefinitions="*">
 
-        <ListView
+        <SearchBar
             Grid.Row="0"
+            Grid.Column="0"
+            x:Name="SearchBar"
+            Placeholder="Search Contact"
+            TextChanged="SearchBar_TextChanged"
+            BackgroundColor="Azure">
+        </SearchBar>
+
+        <ListView
+            Grid.Row="1"
             Grid.Column="0"
             x:Name="ContactsList"
             BackgroundColor="Azure"
@@ -38,7 +47,7 @@
 
         <Button
             Grid.Column="0"
-            Grid.Row="1"
+            Grid.Row="2"
             x:Name="addButton"
             Text="Add Contact"
             Clicked="addButton_Clicked">
