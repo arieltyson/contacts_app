@@ -1,23 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:contacts_app.Views.Controls"
              x:Class="contacts_app.Views.AddContactPage">
     
-        <VerticalStackLayout
-            BackgroundColor="LightGray"
-            Spacing="10"
-            Padding="10">
-                
-            <Label
-                Text="Welcome to the Add Contacts Page"
-                VerticalOptions="Center"
-                HorizontalOptions="Center"/>
-            <Button 
-                x:Name="BtnCancel"
-                BackgroundColor="Red"
-                Clicked="BtnCancel_OnClicked"
-                Text="Cancel"
-            />
-            </VerticalStackLayout>
+    <controls:ContactControl
+        x:Name="contactCtrl"
+        OnSave="contactCtrl_OnSave"
+        OnCancel="contactCtrl_OnCancel">
+    </controls:ContactControl>
 </ContentPage>
