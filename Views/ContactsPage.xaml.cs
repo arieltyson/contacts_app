@@ -38,4 +38,10 @@ public partial class ContactsPage : ContentPage
     {
         Shell.Current.GoToAsync(nameof(AddContactPage));
     }
+
+    void MenuItem_Clicked(System.Object sender, System.EventArgs e)
+    {
+        var menuItem = sender as MenuItem;
+        var contact = menuItem.CommandParameter as Contact;
+    }
 }
